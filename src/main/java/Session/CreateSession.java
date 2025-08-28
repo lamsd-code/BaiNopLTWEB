@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -18,7 +17,7 @@ public class CreateSession extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession(); // tạo session mới nếu chưa có
-        session.setAttribute("name", "Trinh Khoi Nguyen");
+        session.setAttribute("name", "Mai Hoang Truc Lam");
         session.setAttribute("role", "Admin");
         session.setMaxInactiveInterval(300); // 30 giây
 
